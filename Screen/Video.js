@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   fakeContent: {
-    height: 850,
+    height: 450,
     backgroundColor: "#CCC",
     paddingTop: 250,
     alignItems: "center",
