@@ -11,7 +11,7 @@ export default class FirstScreen extends Component {
   render() {
     return (
       <View style={Styles.Container}>
-        <Text style={Styles.text}> React Navigation  </Text>
+        <Text style={{color:'white'}}> React Navigation  </Text>
         <TouchableOpacity onPress={()=>this.props.navigation.navigate('two')} style={Styles.button} >
             <Text style={Styles.text}>Pagination </Text>
         </TouchableOpacity>
@@ -27,6 +27,9 @@ export default class FirstScreen extends Component {
         <TouchableOpacity style={Styles.button}  onPress={()=>this.props.navigation.navigate('VideoDemo')}>
             <Text style={Styles.text}>Scrollable Auto play Video</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={Styles.button}  onPress={()=>this.props.navigation.navigate('Player')}>
+            <Text style={Styles.text}>Video Player</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -36,10 +39,13 @@ const Styles =StyleSheet.create({
     Container:{
       flex:1,
       justifyContent:'center',
-      alignItems:'center'
+      alignItems:'center',
+      backgroundColor:'#121212'
     },
     text:{
       fontSize:20,
+      color:'black',
+      fontWeight:'bold'
     },
     button:{
       width:'80%',
@@ -47,6 +53,6 @@ const Styles =StyleSheet.create({
       margin:10,
       justifyContent:'center',
       alignItems:'center',
-      backgroundColor:'gray'
+      backgroundColor:'#03dac6',
     }
   })

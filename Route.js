@@ -8,6 +8,7 @@ import ThirdScreen from './Screen/ThirdScreen';
 import ReactRef from './Screen/ReactRef';
 import useReducer from './Screen/useReducer';
 import VideoDemo from './Screen/Video';
+import Player from './Screen/Player';
 const AppStack = createStackNavigator({
     one:{
         screen:FirstScreen
@@ -26,6 +27,9 @@ const AppStack = createStackNavigator({
     },
     VideoDemo:{
         screen: VideoDemo
+    },
+    Player:{
+        screen: Player
     }
 })
 
